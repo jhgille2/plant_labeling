@@ -13,13 +13,16 @@ unsorted_img_folder <- "G:\\My Drive\\phd_notes\\Projects\\Nutrient dropout\\Exp
 # The folder where you want to output sorted images to
 sorted_img_folder <- "G:\\My Drive\\phd_notes\\Projects\\Nutrient dropout\\Experiment write-ups\\Washed sand nutrient dropout 1\\photos\\Individual plants"
 
+# Path to the image path ledger
+image_ledger_path <- "G:\\My Drive\\phd_notes\\Projects\\Nutrient dropout\\Experiment write-ups\\Washed sand nutrient dropout 1\\R code\\plant_labeling\\image_ledger.csv"
+
 # Where you want the combined image to go
 combined_image_folder <- sorted_img_folder
 combined_image_name   <- "All plant images.md"
 combined_image_path   <- paste0(combined_image_folder, "\\", combined_image_name)
 
 # Sort the photos
-all_output_paths <- sort_sample_photos(unsorted_img_folder, sorted_img_folder)
+all_output_paths <- sort_sample_photos(unsorted_img_folder, sorted_img_folder, image_ledger_path)
 
 # Combine the photos into a report separated by day
 collate_sample_photos(all_output_paths, combined_image_path)
