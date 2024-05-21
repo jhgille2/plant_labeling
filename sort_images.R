@@ -8,13 +8,13 @@ lapply(list.files("./R", full.names = TRUE), source)
 ## Section: Input/output paths
 ##################################################
 # The folder where you have the input, unsorted photos
-unsorted_img_folder <- "G:\\My Drive\\phd_notes\\Projects\\Nutrient dropout\\Experiment write-ups\\Washed sand nutrient dropout 1\\photos\\Individual plants\\Unsorted photos"
+unsorted_img_folder <- "G:\\My Drive\\phd_notes\\Projects\\Sand sizes\\Max\\Watering regime and potassium phosphate experiment\\Photos\\Unsorted"
 
 # The folder where you want to output sorted images to
-sorted_img_folder <- "G:\\My Drive\\phd_notes\\Projects\\Nutrient dropout\\Experiment write-ups\\Washed sand nutrient dropout 1\\photos\\Individual plants"
+sorted_img_folder <- "G:\\My Drive\\phd_notes\\Projects\\Sand sizes\\Max\\Watering regime and potassium phosphate experiment\\Photos\\Sorted"
 
 # Path to the image path ledger
-image_ledger_path <- "G:\\My Drive\\phd_notes\\Projects\\Nutrient dropout\\Experiment write-ups\\Washed sand nutrient dropout 1\\R code\\plant_labeling\\image_ledger.csv"
+image_ledger_path <- "G:\\My Drive\\phd_notes\\Projects\\Sand sizes\\Max\\Watering regime and potassium phosphate experiment\\Photos\\max_sand_size_image_ledger.csv"
 
 # Where you want the combined image to go
 combined_image_folder <- sorted_img_folder
